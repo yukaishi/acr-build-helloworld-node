@@ -6,8 +6,8 @@ MAINTAINER Steven Shi <steven.yukai.shi@microsoft.com>
 WORKDIR  /usr/src/acr-build-helloworld-node
 
 #Install system dependencies
-RUN apt-get update && \
-    apt-get install -y gcc make apt-transport-https ca-certificates build-essential
+# RUN apt-get update && \
+#    apt-get install -y gcc make apt-transport-https ca-certificates build-essential
 
 # Copy all the files from the project’s root to the working directory
 COPY src/ /src/
