@@ -31,7 +31,7 @@ jobs:
             docker build . -t ${{ secrets.REGISTRY_LOGIN_SERVER }}/stevenystest2021:${{ github.sha }}
             docker push ${{ secrets.REGISTRY_LOGIN_SERVER }}/stevenystest2021:${{ github.sha }}
 #       new code here...
-        - name: 'Run Scripts on Azure ML Computes'
+#        - name: 'Run Scripts on Azure ML Computes'
         - run: |
             az config set defaults.workspace=stevenys-wmtacr-demo-ws
             az config set defaults.group=stevenys-wmtacr-demo-rg
