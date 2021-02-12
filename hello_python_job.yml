@@ -5,7 +5,7 @@ code:
 environment: 
   name: custom_image
   docker: 
-    image: stevenysacr2021.azurecr.io/stevenystest2021:f19c7100ccadd7328be129d76644860a75fe4b49
+    image: docker.io/python
 compute:
   target: azureml:cpu-cluster-bike
 
