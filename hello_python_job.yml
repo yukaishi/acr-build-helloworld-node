@@ -3,8 +3,9 @@ command: python hello.py
 code:
   directory: src
 environment: 
-  name: official_python_image
+  name: custom_image
   docker: 
-    image: docker.io/python
+    image: stevenysacr2021.azurecr.io/stevenystest2021:f19c7100ccadd7328be129d76644860a75fe4b49
 compute:
   target: azureml:cpu-cluster-bike
+
