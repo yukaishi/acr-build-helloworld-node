@@ -6,6 +6,9 @@ MAINTAINER Steven Shi <steven.yukai.shi@microsoft.com>
 WORKDIR  /usr/src/acr-build-helloworld-node
 
 #Install system dependencies
+RUN apt-get update
+
+#Install system dependencies
 # RUN apt-get update && \
 #    apt-get install -y gcc make apt-transport-https ca-certificates build-essential
 
@@ -13,4 +16,4 @@ WORKDIR  /usr/src/acr-build-helloworld-node
 COPY src/ /src/
 RUN ls -la /src/*
 
-CMD [ "python", "./your-daemon-or-script.py" ]
+#CMD [ "python", "./your-daemon-or-script.py" ]
