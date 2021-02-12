@@ -1,0 +1,10 @@
+# yaml-language-server: $schema=https://azuremlsdk2.blob.core.windows.net/latest/commandJob.schema.json
+command: python hello.py
+code:
+  directory: src
+environment: 
+  name: official_python_image
+  docker: 
+    image: docker.io/python
+compute:
+  target: azureml:cpu-cluster-bike
