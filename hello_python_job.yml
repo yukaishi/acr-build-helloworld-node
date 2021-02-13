@@ -4,7 +4,7 @@ environment:
   name: custom_image
   docker: 
 #    image: stevenyswmtaa12381d9.azurecr.io/stevenystest2021:5781508f07c22d4ad2cf359791cdbaf574a145a6
-    image: stevenyswmtaa12381d9.azurecr.io/stevenystest2021:${{ github.sha }}
+#    image: stevenyswmtaa12381d9.azurecr.io/stevenystest2021:${{ github.sha }}
 compute:
   target: azureml:cpu-cluster-bike
 
