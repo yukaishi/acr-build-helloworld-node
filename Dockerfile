@@ -3,7 +3,7 @@ FROM python:3
 MAINTAINER Steven Shi <steven.yukai.shi@microsoft.com>
 
 # set the working directory for containers
-WORKDIR  /usr/src/acr-build-helloworld-node
+# WORKDIR  /usr/src/acr-build-helloworld-node
 
 #Install system dependencies
 RUN apt-get update
