@@ -37,7 +37,7 @@ jobs:
             az config set defaults.group=stevenys-wmtacr-demo-rg
             az config set defaults.location=westus
             az account set -s ea1dc7d2-92ee-4134-9128-8c0a0341f8ca
-            az ml job create —file hello_python_job.YML —set environment.docker.image=stevenyswmtaa12381d9.azurecr.io/:${{ github.sha }}
+            az ml job create —file hello_python_job.yml —set environment.docker.image=stevenyswmtaa12381d9.azurecr.io/stevenystest2021:${{ github.sha }}
  #           az ml job create --file hello_python_job.yml
 
        
