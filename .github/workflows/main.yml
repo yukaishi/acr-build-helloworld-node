@@ -39,7 +39,8 @@ jobs:
             az account set -s ea1dc7d2-92ee-4134-9128-8c0a0341f8ca
             IMAGE = ${{ secrets.REGISTRY_LOGIN_SERVER }}/stevenystest2021:${{ github.sha }}
             echo $IMAGE
-            az ml job create --file hello_python_job.yml
+            az ml job create —file hello_python_job.YML —set environment.docker.image=stevenyswmtaa12381d9.azurecr.io/:${{ github.sha }}
+ #           az ml job create --file hello_python_job.yml
 
        
  
