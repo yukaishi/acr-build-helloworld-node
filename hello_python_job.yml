@@ -1,5 +1,5 @@
 # yaml-language-server: $schema=https://azuremlsdk2.blob.core.windows.net/latest/commandJob.schema.json
-command: python src/hello.py
+command: python /src/hello.py
 environment: 
   name: custom_image
   docker: 
