@@ -38,22 +38,3 @@ jobs:
             az config set defaults.location=westus
             az account set -s ea1dc7d2-92ee-4134-9128-8c0a0341f8ca
             az ml job create --file hello_python_job.yml --set environment.docker.image=stevenyswmtaa12381d9.azurecr.io/stevenystest2021:${{ github.sha }}
- #           az ml job create --file hello_python_job.yml
-
-       
- 
-          
-            
-      
-
-
-#        - name: 'Deploy to Azure Container Instances'
-#          uses: 'azure/aci-deploy@v1'
-#          with:
-#            dns-name-label: ${{ secrets.RESOURCE_GROUP }}${{ github.run_number }}
-#            image: ${{ secrets.REGISTRY_LOGIN_SERVER }}/sampleapp:${{ github.sha }}
-#            registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-#            registry-username: ${{ secrets.REGISTRY_USERNAME }}
-#            registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-#            name: aci-sampleapp
-#            location: 'west us'
